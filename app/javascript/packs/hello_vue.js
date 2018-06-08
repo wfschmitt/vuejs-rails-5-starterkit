@@ -54,18 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 //
 // Then uncomment the code block below:
 //
-// import TurbolinksAdapter from 'vue-turbolinks';
-// import Vue from 'vue/dist/vue.esm'
-// import App from '../app.vue'
-//
-// Vue.use(TurbolinksAdapter)
-//
-// document.addEventListener('turbolinks:load', () => {
-//   const app = new Vue({
-//     el: '#hello',
-//     data: {
-//       message: "Can you say hello?"
-//     },
-//     components: { App }
-//   })
-// })
+
+import TurbolinksAdapter from 'vue-turbolinks';
+import VueWithCompiler from 'vue/dist/vue.esm'
+
+Vue.use(TurbolinksAdapter)
+
+document.addEventListener('turbolinks:load', () => {
+  const app = new VueWithCompiler({
+    el: '#hello-example-from-template',
+    data: {
+      message: "Can you say hello with runtime compilation?"
+    },
+    components: { App }
+  })
+})
