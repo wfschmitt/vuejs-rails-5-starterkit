@@ -2,6 +2,7 @@
 
 A quick and easy way to setup Rails + Webpacker + Vue + Jest.
 If your team is considering, or has already decided, to use Vue, this is the right for you.
+As extra review how to setup PWA, Turbolinks, CSS frameworks, Stroybook.
 
 Things you may want to cover:
 
